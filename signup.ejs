@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: cover;
+      background: url(https://media.istockphoto.com/id/680381156/photo/blockchain-network-concept-distributed-ledger-technology-block-chain-text-and-computer.webp?s=2048x2048&w=is&k=20&c=Rep6Pja_jy_Rnr-OEQd0ahqTQc4uXT4edZIZptqNsY4=) center/cover;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 21px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1.form-title {
+      color: #333;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="submit"],
+    input[type="radio"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+
+    input[type="submit"] {
+      background-color: #ff6f61;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e35448;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff6f61;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="form-title">Sign Up</h1>
+    <h2>Do you want to know more about the Bikes...? Here in this webpage we will provide you, please Sign up first</h2>
+    <form id="Sign Up" action="/signupsubmit" method="GET">
+      <div class="user-input-nameinfo">
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name"  placeholder="Enter Name" required />
+      </div>
+      <div class="user-input-info">
+        <label for="Email address">Email address</label>
+        <input type="text" required id="email" name="email" placeholder="Enter Email address" required />
+      </div>
+      <div class="user-input-securityinfo">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+      </div>
+      <div class="user-input-confirminfo">
+        <label for="confirm password">Confirm Password</label>
+        <input type="password" id="CPass" name="CPassword" placeholder="Confirm password" required />
+      </div>
+      <div class="form-submitt-button">
+        <input type="submit" required id="btn" class="submit" value="Sign Up" />
+      </div>
+    </form>
+    <p>If already signed up, please <u><a href="/login.ejs">Login</a></u> here.</p>
+  </div>
+</body>
+</html>
