@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: url(https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=2048x2048&w=is&k=20&c=i4g0apzIPwkQ-3Iww4YYCrcNncrV5812m39vwUuU9m8=);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1.form-title {
+            color: brown;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #8b4513;
+        }
+        a {
+            text-decoration: none;
+            color: brown;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title"><i><b>Log In</b></i></h1>
+        <form id="LogIn" action="/loginsubmit" method="GET">
+            <div class="user-input-info">
+                <label for="EmailAddress">Email address</label>
+                <input type="text" required  name="email" placeholder="Enter Email address" />
+            </div>
+            <div class="user-input-securityinfo">
+                <label for="Password">Password</label>
+                <input type="password" required name="password" placeholder="Enter password" />
+            </div>
+            <div class="form-submitt-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <a href="#">Forgot password?</a>
+    </div>
+</body>
+</html>
