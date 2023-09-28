@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Details</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(https://www.teahub.io/photos/full/228-2286361_cell-phone-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        #Star-details {
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        i {
+            color:green; 
+        }
+        u{
+            color:rgb(55, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Phone Number Details</u></h1>
+        <div id="Phone Number Details">
+            <h3> Is Valid: <i><%= is_valid%></i></h3>
+            <h3> Country: <i><%= country%></i></h3>
+            <h3> Location: <i><%= location%></i></h3>
+            <h3> Timezones: <i><%= timezones%></i></h3>
+            <h3> Format National: <i><%= format_national%></i></h3>
+            <h3> country_code: <i><%= country_code%></i></h3>
+        </div>
+    </div>
+</body>
+</html>
